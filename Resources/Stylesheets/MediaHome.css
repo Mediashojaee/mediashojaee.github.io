@@ -64,7 +64,6 @@ html.search-results .sidenav-wrapper	/*Removes the side navigation from the sear
 
 div.home-layout
 {
-	background-image: url('../Images/Elements/image-business.jpg');
 	background-repeat: no-repeat;
 	padding: 2% 15%;
 	background-position: center;
@@ -446,10 +445,10 @@ div.SearchBox
 
 :root
 {
-	--RTIColor: #1c3665;
 	--HFont: Roboto;
 	--PFont: Roboto;
 	--RTIColor2: #990000;
+	--RTIColor: #1c3665;
 }
 
 div
@@ -496,6 +495,45 @@ div.Grid84 > div:nth-child(2)
 	margin-left: 0%;
 }
 
+div.Grid48	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Grid48::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Grid48::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Grid48 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Grid48 > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.Grid48 > div:nth-child(2)
+{
+	width: 66.667%;
+	margin-left: 0%;
+}
+
 @media only screen and (max-width: 1279px)
 {
 	html.home-topic .body-container
@@ -528,6 +566,18 @@ div.Grid84 > div:nth-child(2)
 	}
 
 	div.Grid84 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Grid48 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Grid48 > div:nth-child(2)
 	{
 		width: 33.33333%;
 		margin-left: 0%;
@@ -601,6 +651,18 @@ div.Grid84 > div:nth-child(2)
 	}
 
 	div.Grid84 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Grid48 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Grid48 > div:nth-child(2)
 	{
 		width: 100%;
 		margin-left: 0%;
