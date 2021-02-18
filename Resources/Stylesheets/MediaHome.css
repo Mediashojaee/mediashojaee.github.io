@@ -1,0 +1,627 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	font-family: var(--PFont);
+}
+
+body.home
+{
+	background-color: #fafafa;
+}
+
+.inner-wrap .tab-bar .nav-search	/*Prevents the search in the header from appearing on the home page*/
+{
+	display: none;
+}
+
+/*nav.title-bar
+{
+	background-color: #fafafa !important;
+}
+
+.title-bar-layout a.logo
+{
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	z-index: 1 !important;
+	display: block !important;
+	width: 170px !important;
+	height: 40px !important;
+	align-self: center !important;
+	background: transparent url(../../Resources/Images/Elements/Logo.png) no-repeat center center !important;
+	-pie-background: transparent url(../../Resources/Images/Elements/Logo.png) no-repeat center center !important;
+}*/
+
+html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+html.home-topic .sidenav-wrapper	/*Removes the side navigation from the home topic*/
+{
+	display: none;
+}
+
+html.search-results .sidenav-wrapper	/*Removes the side navigation from the search results page*/
+{
+	display: none;
+}
+
+div.home-layout
+{
+	background-image: url('../Images/Elements/image-business.jpg');
+	background-repeat: no-repeat;
+	padding: 2% 15%;
+	background-position: center;
+	background-size: cover;
+	min-height: 800px;
+}
+
+div.layout-separator
+{
+	border-right: 1px solid #dadada;
+}
+
+div.topic-container	/*Sets padding on topics*/
+{
+	padding: 2% 0;
+}
+
+div.sub-content
+{
+	border-top: solid 1px #dadada;
+	margin-top: 40px;
+	padding: 25px 0;
+}
+
+div.search-results	/*Sets side padding on search results*/
+{
+	padding: 0 20%;
+}
+
+h1
+{
+	font-weight: bold;
+	color: var(--RTIColor);
+	font-size: 2.5em;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 20pt;
+	letter-spacing: 0.25;
+	mc-hyphenate: never;
+}
+
+p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: #fff;
+}
+
+ol,
+ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+}
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: #45494c;
+	font-size: 20pt;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+MadCap|xref
+{
+	color: #45494c;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #888888;
+}
+
+a:link	/*Color of hyperlinks*/
+{
+	color: #45494c;
+}
+
+a:visited
+{
+	color: #45494c;
+}
+
+MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+MadCap|dropDown
+{
+	border-bottom: 1px solid #dadada;
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	mc-open-image: url('../Images/Elements/minus.png');
+	mc-closed-image: url('../Images/Elements/plus.png');
+	padding: 10px 0;
+}
+
+div.home-page-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-page-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-page-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-page-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-page-layout > div:nth-child(1)
+{
+	width: 75%;
+	margin-left: 0%;
+	padding: 0 5%;
+}
+
+div.home-page-layout > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+	padding: 0 5% 2%;
+}
+
+div.home-tiles-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 5%;
+}
+
+div.home-tiles-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 350px;
+}
+
+div.home-tiles-layout > div:nth-child(1)
+{
+	width: 48%;
+	margin-left: 0%;
+}
+
+div.home-tiles-layout > div:nth-child(2)
+{
+	width: 48%;
+	margin-left: 4%;
+}
+
+div.home-tiles-layout > div:nth-child(2) > div:last-child
+{
+	margin-bottom: 0;
+}
+
+div.home-tile
+{
+	padding: 4%;
+	height: 100%;
+	border: solid 1px #dadada;
+	border-radius: 3px;
+}
+
+a.main-tile
+{
+	height: 100%;
+	display: block;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 7px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+a.side-tile
+{
+	height: 23.5%;
+	display: block;
+	text-align: center;
+	margin-bottom: 7px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+a.main-tile:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.2s;
+}
+
+a.side-tile:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.2s;
+}
+
+p.tile-title
+{
+	font-size: 1.2em;
+	letter-spacing: 0.25;
+	margin: 0;
+	color: var(--RTIColor);
+	font-weight: bold;
+}
+
+p.tile-subtitle
+{
+	font-size: 0.9em;
+	margin: 0;
+}
+
+div.video-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.video-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.video-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.video-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.video-tiles > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.video-tiles > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.video-tiles > div:nth-child(3)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.video-tiles *	/*Text-align center set to all elements within div.video-tiles*/
+{
+	text-align: center;
+}
+
+div.home-footer
+{
+	padding: 1% 5%;
+	background-color: var(--RTIColor);
+}
+
+div.SearchBox
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	margin-bottom: 40px;
+}
+
+:root
+{
+	--RTIColor: #1c3665;
+	--HFont: Roboto;
+	--PFont: Roboto;
+	--RTIColor2: #990000;
+}
+
+div
+{
+	mc-hyphenate: never;
+}
+
+div.Grid84	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Grid84::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Grid84::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Grid84 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Grid84 > div:nth-child(1)
+{
+	width: 66.66667%;
+	margin-left: 0%;
+}
+
+div.Grid84 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	div.home-layout
+	{
+		padding: 2% 5%;
+	}
+
+	div.home-tiles-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles-layout > div:nth-child(2)
+	{
+		width: 100%;
+		margin-top: 5%;
+		margin-left: 0%;
+	}
+
+	div.Grid84 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Grid84 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.home-layout
+	{
+		padding: 2% 0;
+	}
+
+	.layout-separator
+	{
+		border-right: none;
+	}
+
+	div.home-tiles-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles-layout > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 5%;
+	}
+
+	div.home-page-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-page-layout > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.video-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.video-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.video-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.SearchBox
+	{
+		
+	}
+
+	div.Grid84 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Grid84 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+@media print
+{
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+}
+
+p.footer-title
+{
+	color: #ffffff;
+	line-height: 27pt;
+	font-size: 1.4em;
+	font-family: 'Open Sans Light';
+}
+

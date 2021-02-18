@@ -1,0 +1,1 @@
+define({"../Chapters/Media/Contact.htm":0,"../MicroContent/Resources/MicroContent/Mini Landing Pages/what-is-micro-content.htm#tell-me-about-micro-content":2,"../MicroContent/Resources/MicroContent/Mini Landing Pages/what-is-micro-content.htm#what-is-micro-content":1,});

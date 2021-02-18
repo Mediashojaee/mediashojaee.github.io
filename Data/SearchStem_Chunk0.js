@@ -1,0 +1,1 @@
+define({"about":{"about":[2],},"contact":{"contact":[0],},"content":{"content":[1,2],},"is":{"is":[1],},"me":{"me":[2],},"micro":{"micro":[1,2],},"tell":{"tell":[2],},"what":{"what":[1],},});

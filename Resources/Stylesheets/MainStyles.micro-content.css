@@ -1,0 +1,1905 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+.micro-response
+{
+	font-family: var(--PFont);
+	font-size: var(--FontSize);
+}
+
+body.home.micro-response
+{
+	background-color: #fafafa;
+}
+
+.micro-response html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+.micro-response html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+.micro-response html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+.micro-response html.home-topic .sidenav-wrapper	/*Removes the side navigation from the home topic*/
+{
+	display: none;
+}
+
+.micro-response html.search-results .sidenav-wrapper	/*Removes the side navigation from the search results page*/
+{
+	display: none;
+}
+
+.micro-response div.home-layout
+{
+	background-image: url('../Images/Elements/image-business.jpg');
+	background-repeat: no-repeat;
+	padding: 2% 15%;
+	background-position: center;
+	background-size: cover;
+	min-height: 800px;
+}
+
+.micro-response div.layout-separator
+{
+	border-right: 1px solid #dadada;
+}
+
+.micro-response div.topic-container	/*Sets padding on topics*/
+{
+	padding: 2% 0;
+}
+
+.micro-response div.sub-content
+{
+	border-top: solid 1px #dadada;
+	margin-top: 40px;
+	padding: 25px 0;
+}
+
+.micro-response div.search-results	/*Sets side padding on search results*/
+{
+	padding: 0 20%;
+}
+
+.micro-response h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: #45494c;
+}
+
+.micro-response h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+	color: var(--WebColorBlue1);
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1px var(--WebColorBlue1);
+}
+
+.micro-response h3
+{
+	font-weight: bold;
+	border-bottom: solid 1px var(--WebColorBlue1);
+	color: var(--WebColorBlue1);
+	font-size: 16.0pt;
+}
+
+.micro-response h4
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+.micro-response h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+.micro-response h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+.micro-response p
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 20pt;
+	mc-hyphenate: never;
+	letter-spacing: 0.25;
+	font-size: var(--FontSize);
+}
+
+.micro-response p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: #fff;
+}
+
+.micro-response ol,
+.micro-response ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+}
+
+.micro-response img
+{
+	border: none;
+}
+
+.micro-response .center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.micro-response MadCap|expandingHead
+{
+	cursor: hand;
+}
+
+.micro-response MadCap|expandingBody
+{
+	mc-hyphenate: never;
+}
+
+.micro-response MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: none;
+	font-size: 14pt;
+	color: var(--DarkGrey);
+}
+
+.micro-response MadCap|xref
+{
+	font-weight: bold;
+	text-decoration: underline;
+	mc-hyphenate: never;
+	color: var(--Black);
+	mc-format: '{color #014579}{paratext}{/color}';
+}
+
+.micro-response MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #888888;
+}
+
+.micro-response a:link	/*Color of hyperlinks*/
+{
+	color: #45494c;
+}
+
+.micro-response a:visited
+{
+	color: #45494c;
+}
+
+.micro-response MadCap|dropDownBody
+{
+	padding-bottom: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+}
+
+.micro-response MadCap|dropDown
+{
+	border-bottom: 1px solid #dadada;
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	padding: 10px 0;
+	mc-open-image: url('../Images/Elements/ArrowDownBlue.svg');
+	mc-closed-image: url('../Images/Elements/ArrowRightDBLarge.svg');
+}
+
+.micro-response div.home-page-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.home-page-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.home-page-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.home-page-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.home-page-layout > div:nth-child(1)
+{
+	width: 75%;
+	margin-left: 0%;
+	padding: 0 5%;
+}
+
+.micro-response div.home-page-layout > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+	padding: 0 5% 2%;
+}
+
+.micro-response div.home-tiles-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 5%;
+}
+
+.micro-response div.home-tiles-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.home-tiles-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.home-tiles-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 350px;
+}
+
+.micro-response div.home-tiles-layout > div:nth-child(1)
+{
+	width: 48%;
+	margin-left: 0%;
+}
+
+.micro-response div.home-tiles-layout > div:nth-child(2)
+{
+	width: 48%;
+	margin-left: 4%;
+}
+
+.micro-response div.home-tiles-layout > div:nth-child(2) > div:last-child
+{
+	margin-bottom: 0;
+}
+
+.micro-response div.home-tile
+{
+	padding: 4%;
+	height: 100%;
+	border: solid 1px #dadada;
+	border-radius: 3px;
+}
+
+.micro-response a.main-tile
+{
+	height: 100%;
+	display: block;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 7px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.micro-response a.side-tile
+{
+	height: 23.5%;
+	display: block;
+	text-align: center;
+	margin-bottom: 7px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.micro-response a.main-tile:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.2s;
+}
+
+.micro-response a.side-tile:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.2s;
+}
+
+.micro-response p.tile-title
+{
+	font-size: 1.2em;
+	letter-spacing: 0.25;
+	margin: 0;
+	color: var(--RTIColor);
+}
+
+.micro-response p.tile-subtitle
+{
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.micro-response div.video-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.video-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.video-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.video-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.micro-response div.video-tiles > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+.micro-response div.video-tiles > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+.micro-response div.video-tiles > div:nth-child(3)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+.micro-response div.video-tiles *	/*Text-align center set to all elements within div.video-tiles*/
+{
+	text-align: center;
+}
+
+.micro-response div.home-footer
+{
+	padding: 1% 5%;
+	background-color: var(--RTIColor);
+}
+
+.micro-response div.SearchBox
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.micro-response :root	/*RTIColor3 was used for Captions in previous projects.*/
+{
+	--RTIColor: #1c3665;
+	--HFont: Roboto;
+	--PFont: Roboto;
+	--RTIColor2: #990000;
+	--White: #ffffff;
+	--Pink: #fff0f5;
+	--SkyBlue: #f0f7fb;
+	--Orange: #FF6633;
+	--Cream: #FDF8E4;
+	--LightGreen: #e7f6f1;
+	--DarkGreen: #006400;
+	--Pfont2: Calibri;
+	--WebColorBlue1: #007acc;
+	--WebColorBlue2: #014579;
+	--WebColorRed1: #af0606;
+	--RTIColor3: #0000a1;
+	--RTIColor4: #49a1ec;
+	--RTIColor5: #4F81BD;
+	--DarkGrey: #45494c;
+	--Black: #000000;
+	--FontSize: 12pt;
+}
+
+.micro-response #myBtn
+{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: transparent;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: var(--RTIColor);
+	background-image: url('../Images/Elements/Back-Top.svg');
+}
+
+.micro-response span.SearchHighlight1
+{
+	background-color: #ffff66;
+}
+
+.micro-response span.SearchHighlight
+{
+	background: #ffff66;
+}
+
+.micro-response span.SearchHighlight2
+{
+	background-color: #a0ffff;
+}
+
+.micro-response span.SearchHighlight3
+{
+	background-color: #99ff99;
+}
+
+.micro-response span.SearchHighlight4
+{
+	background-color: #ff9999;
+}
+
+.micro-response span.SearchHighlight5
+{
+	background-color: #ff66ff;
+}
+
+.micro-response span.SearchHighlight6
+{
+	background-color: #880000;
+	color: var(--White);
+}
+
+.micro-response span.SearchHighlight7
+{
+	background-color: #00aa00;
+	color: var(--White);
+}
+
+.micro-response span.SearchHighlight8
+{
+	background-color: #886800;
+	color: var(--White);
+}
+
+.micro-response span.SearchHighlight9
+{
+	background-color: #004699;
+	color: var(--White);
+}
+
+.micro-response span.SearchHighlight10
+{
+	background-color: #990099;
+	color: var(--White);
+}
+
+.micro-response div.note
+{
+	line-height: 18px;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	background-position-x: 12px;
+	background-color: var(--SkyBlue);
+	page-break-inside: avoid;
+	border-left: solid 6px var(--WebColorBlue2);
+	mc-auto-number-format: '{color #014579}{b}NOTE  {/b}{/color}';
+	background-image: url('../Images/Elements/Note.svg');
+	margin-top: 20px;
+	padding-top: 15px;
+	background-position-y: 14px;
+}
+
+.micro-response div.noteimp
+{
+	line-height: 18px;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	border-left: solid 6px var(--RTIColor2);
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	background-position-x: 12px;
+	background-color: var(--Pink);
+	page-break-inside: avoid;
+	mc-auto-number-format: '{color #990000}{b}IMPORTANT NOTE  {/b}{/color}';
+	background-image: url('../Images/Elements/Noteimp.svg');
+	background-position-y: 14px;
+}
+
+.micro-response div.warn
+{
+	line-height: 18px;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	border-left: solid 6px var(--RTIColor2);
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	background-color: var(--Pink);
+	background-position-x: 12px;
+	background-position-y: 13px;
+	page-break-inside: avoid;
+	mc-auto-number-format: '{color #990000}{b}WARNING  {/b}{/color}';
+	background-image: url('../Images/Elements/Warn.svg');
+}
+
+.micro-response div.exp
+{
+	line-height: 18px;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	border-left: solid 6px var(--DarkGreen);
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	background-color: var(--LightGreen);
+	background-position-x: 15px;
+	background-position-y: 0px;
+	page-break-inside: avoid;
+	mc-auto-number-format: '{color #006400}{b}EXAMPLE  {/b}{/color}';
+	background-image: url('../Images/Elements/Eg.svg');
+}
+
+.micro-response div.tip
+{
+	line-height: 18px;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	border-left: solid 6px var(--Orange);
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	background-color: var(--Cream);
+	background-position-x: 12px;
+	background-position-y: 13px;
+	page-break-inside: avoid;
+	mc-auto-number-format: '{color #FF6633}{b}TIPS & TRICKS  {/b}{/color}';
+	background-image: url('../Images/Elements/Tip.svg');
+}
+
+.micro-response p.TOC1
+{
+	line-height: 5pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: var(--Pfont2);
+	font-size: 11pt;
+}
+
+.micro-response p.TOC2
+{
+	line-height: 5pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: var(--Pfont2);
+	font-size: 11pt;
+}
+
+.micro-response p.TOC3
+{
+	line-height: 5pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: var(--Pfont2);
+	font-size: 11pt;
+}
+
+.micro-response MadCap|dropDownHead
+{
+	page-break-after: avoid;
+}
+
+.micro-response MadCap|dropDownHotspot:hover
+{
+	color: var(--WebColorBlue2);
+}
+
+.micro-response MadCap|expandingHead:hover
+{
+	color: var(--WebColorBlue2);
+}
+
+.micro-response MadCap|expanding
+{
+	mc-closed-image: url('../Images/Elements/ExpandingClosed.svg');
+	mc-open-image: url('../Images/Elements/ExpandingOpen.svg');
+	mc-image-spacing: 2px;
+}
+
+.micro-response div
+{
+	mc-hyphenate: never;
+}
+
+.micro-response ul
+{
+	line-height: 20pt;
+}
+
+.micro-response MadCap|conceptLink
+{
+	color: var(--DarkGrey);
+	mc-image: url('../Images/Elements/Ham.svg');
+	mc-label: 'SEE ALSO';
+}
+
+.micro-response MadCap|conceptLink:hover
+{
+	color: var(--WebColorBlue2);
+}
+
+.micro-response MadCap|conceptLinkControlList
+{
+	
+}
+
+.micro-response MadCap|conceptLinkControlListItemLink:focus
+{
+	
+}
+
+.micro-response MadCap|conceptLinkControlListItemLink:hover
+{
+	
+}
+
+.micro-response MadCap|conceptLinkControlListItemLink:link
+{
+	
+}
+
+.micro-response MadCap|helpControlMenuItem.Highlighted
+{
+	background-color: var(--WebColorBlue2);
+}
+
+.micro-response MadCap|helpControlMenuItem
+{
+	font-family: var(--PFont);
+}
+
+.micro-response MadCap|helpControlMenu
+{
+	border: solid 1px var(--WebColorBlue2);
+}
+
+.micro-response span.MainColor1
+{
+	color: var(--WebColorBlue1);
+}
+
+.micro-response MadCap|tocProxy
+{
+	border-top-color: var(--WebColorBlue1);
+}
+
+.micro-response div.NoPageBreak
+{
+	
+}
+
+.micro-response img.Max-WidthS100P450
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P400
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P350
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P100
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P150
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P200
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P75
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P50
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P25
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P250
+{
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P300
+{
+	max-width: 100%;
+}
+
+.micro-response MadCap|xref.TextNum
+{
+	mc-format: '{i}{paratext}{/i}';
+	color: var(--WebColorBlue2);
+	font-weight: normal;
+	mc-italic-correction: 2px;
+}
+
+.micro-response MadCap|xref.ReleaseLinks
+{
+	font-weight: normal;
+	mc-italic-correction: 2px;
+	text-decoration: none;
+	mc-format: '(See {color #014579}{u}{i}{paratext}{/i}{/u}{/color}.)';
+	mc-conditions: 'Default.User Guide Only';
+	color: var(--Black);
+}
+
+.micro-response MadCap|miniTocProxy
+{
+	margin-top: 5px;
+	border-top-color: transparent;
+	border-top-style: none;
+	padding-top: 0px;
+}
+
+.micro-response li
+{
+	mc-hyphenate: never;
+	font-size: var(--FontSize);
+	padding-bottom: 5px;
+}
+
+.micro-response img.HeightS20P16
+{
+	height: 20px;
+}
+
+.micro-response div.Micro-Response	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.Micro-Response::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.Micro-Response::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.Micro-Response > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.Micro-Response > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+.micro-response div.Micro-Response > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid84	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.Grid84::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.Grid84::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.Grid84 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.Grid84 > div:nth-child(1)
+{
+	width: 66.66667%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid84 > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid444	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.Grid444::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.Grid444::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.Grid444 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.Grid444 > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid444 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid444 > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid66	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.Grid66::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.Grid66::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.Grid66 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.Grid66 > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid66 > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+.micro-response .BorderBotBlackSP
+{
+	border-bottom-color: var(--Black);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 5px;
+}
+
+.micro-response div.Grid3333	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.Grid3333::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.Grid3333::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.Grid3333 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.Grid3333 > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid3333 > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid3333 > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+.micro-response div.Grid3333 > div:nth-child(4)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+.micro-response .No-Space
+{
+	line-height: 0;
+	margin-bottom: 0;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	.micro-response html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	.micro-response div.home-layout
+	{
+		padding: 2% 5%;
+	}
+
+	.micro-response div.home-tiles-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-tiles-layout > div:nth-child(2)
+	{
+		width: 100%;
+		margin-top: 5%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Micro-Response > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Micro-Response > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid84 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid84 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid444 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid444 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid444 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid66 > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid66 > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.micro-response div.home-layout
+	{
+		padding: 2% 0;
+	}
+
+	.micro-response .layout-separator
+	{
+		border-right: none;
+	}
+
+	.micro-response div.home-tiles-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-tiles-layout > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 5%;
+	}
+
+	.micro-response div.home-page-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-page-layout > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.video-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.video-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.video-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.SearchBox
+	{
+		
+	}
+
+	.micro-response div.Micro-Response > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Micro-Response > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid84 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid84 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid444 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid444 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid444 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid66 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid66 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.Grid3333 > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	.micro-response .No-Space
+	{
+		
+	}
+}
+
+@media print
+{
+	.micro-response MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	.micro-response p.MiniTOC1
+	{
+		font-weight: normal;
+		line-height: normal;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		mc-leader-format: ' ';
+		color: #ffffff;
+	}
+
+	.micro-response MadCap|miniTocProxy
+	{
+		border-top-color: var(--White);
+		margin-top: 10px;
+		padding-top: 10px;
+		border-top-style: solid;
+		border-top-width: 1px;
+	}
+
+	.micro-response h1
+	{
+		color: #ffffff;
+		page-break-before: auto;
+	}
+
+	.micro-response h4
+	{
+		mc-heading-level: 0;
+	}
+
+	.micro-response h5
+	{
+		mc-heading-level: 0;
+	}
+
+	.micro-response h6
+	{
+		mc-heading-level: 0;
+	}
+
+	.micro-response MadCap|expandingBody
+	{
+		margin-left: 5px;
+		background-repeat: repeat;
+		mc-hyphenate: never;
+	}
+
+	.micro-response MadCap|expanding
+	{
+		
+	}
+
+	.micro-response ul.HeadList
+	{
+		vertical-align: middle;
+	}
+
+	.micro-response p.TOC1
+	{
+		mc-leader-format: 'none';
+		font-size: 12pt;
+		mc-pagenum-display: leaf;
+		margin-bottom: 6px;
+		margin-top: 15px;
+		text-transform: uppercase;
+		color: var(--WebColorBlue2);
+	}
+
+	.micro-response p.TOC2
+	{
+		margin-left: 0px;
+		mc-leader-offset: 18px;
+	}
+
+	.micro-response span.MainColor1
+	{
+		
+	}
+
+	.micro-response MadCap|tocProxy
+	{
+		padding-top: 25px;
+	}
+
+	.micro-response p.TOC3
+	{
+		mc-leader-offset: 18px;
+	}
+
+	.micro-response img.InLine
+	{
+		max-height: 16px;
+	}
+
+	.micro-response img.MaxLine
+	{
+		max-height: 13px;
+	}
+
+	.micro-response img.Paragraph
+	{
+		height: 25px;
+	}
+
+	.micro-response ul.NegMargin
+	{
+		margin-left: 24px;
+	}
+
+	.micro-response img.Max-Width100Percent	/*Max Width Print 100*/
+	{
+		
+	}
+
+	.micro-response div.NoPageBreak
+	{
+		page-break-inside: avoid;
+	}
+
+	.micro-response img.Max-WidthS100P700
+	{
+		min-width: none;
+		width: 700px;
+	}
+
+	.micro-response img.Max-WidthS100P650
+	{
+		max-width: 100%;
+		min-width: none;
+		width: 650px;
+	}
+
+	.micro-response img.Max-WidthS100P600
+	{
+		max-width: 100%;
+		min-width: none;
+		width: 600px;
+	}
+
+	.micro-response img.Max-WidthS100P550
+	{
+		max-width: 100%;
+		min-width: none;
+		width: 550px;
+	}
+
+	.micro-response img.Max-WidthS100P500
+	{
+		max-width: 100%;
+		min-width: none;
+		width: 500px;
+	}
+
+	.micro-response img.Max-WidthS100P450
+	{
+		max-width: 100%;
+		width: 450px;
+	}
+
+	.micro-response img.Max-WidthS100P400
+	{
+		max-width: 100%;
+		width: 400px;
+	}
+
+	.micro-response img.Max-WidthS100P350
+	{
+		max-width: 100%;
+		width: 350px;
+	}
+
+	.micro-response img.Max-WidthS100P300
+	{
+		max-width: 100%;
+		width: 300px;
+	}
+
+	.micro-response img.Max-WidthS100P250
+	{
+		max-width: 100%;
+		width: 250px;
+	}
+
+	.micro-response img.Max-WidthS100P200
+	{
+		max-width: 100%;
+		width: 200px;
+	}
+
+	.micro-response img.Max-WidthS100P150
+	{
+		max-width: 100%;
+		width: 150px;
+	}
+
+	.micro-response img.Max-WidthS100P100
+	{
+		max-width: 100%;
+		width: 100px;
+	}
+
+	.micro-response img.Max-WidthS100P75
+	{
+		max-width: 100%;
+		width: 75px;
+	}
+
+	.micro-response img.Max-WidthS100P50
+	{
+		max-width: 100%;
+		width: 50px;
+	}
+
+	.micro-response img.Max-WidthS100P25
+	{
+		max-width: 100%;
+		width: 25px;
+	}
+
+	.micro-response MadCap|xref.TextNum
+	{
+		mc-format: '{i}{paratext}{/i} {pageref}';
+	}
+
+	.micro-response MadCap|xref.ReleaseLinks
+	{
+		mc-format: '(See {color #014579}{i}{paratext}{/i} {pageref}{/color}.)';
+	}
+
+	.micro-response .BorderBotWhite
+	{
+		border-bottom-color: var(--White);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+	}
+
+	.micro-response MadCap|dropDown
+	{
+		border-bottom: none;
+	}
+
+	.micro-response MadCap|dropDownBody
+	{
+		padding-right: 0px;
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+
+	.micro-response p
+	{
+		text-align: justify;
+	}
+
+	.micro-response li
+	{
+		text-align: justify;
+	}
+
+	.micro-response :root
+	{
+		--FontSize: 11pt;
+	}
+
+	.micro-response .BorderBotSBlack
+	{
+		border-bottom-color: none;
+		border-bottom-style: none;
+		border-bottom-width: none;
+		padding-bottom: 0px;
+	}
+
+	.micro-response .Level2
+	{
+		font-size: 11pt;
+	}
+
+	.micro-response img.HeightS20P16
+	{
+		height: 16px;
+	}
+
+	.micro-response ol
+	{
+		line-height: 0pt;
+	}
+
+	.micro-response div.Micro-Response > div:nth-child(2)
+	{
+		display: none;
+	}
+
+	.micro-response div.Micro-Response > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	.micro-response .BorderBotBlackSP
+	{
+		
+	}
+}
+
+.micro-response span.Underline
+{
+	text-decoration: underline;
+}
+
+.micro-response span.Bold
+{
+	font-weight: bold;
+}
+
+.micro-response span.BoldBlue
+{
+	font-weight: bold;
+	color: var(--WebColorBlue2);
+}
+
+.micro-response span.Italic
+{
+	font-style: italic;
+	mc-italic-correction: 2px;
+}
+
+.micro-response span.mc-variable.Caption
+{
+	color: var(--WebColorBlue2);
+	font-style: italic;
+	mc-italic-correction: 2px;
+}
+
+.micro-response ul.HeadList > li > ul
+{
+	list-style-image: none;
+}
+
+.micro-response span.MainColor2
+{
+	color: var(--WebColorBlue2);
+}
+
+.micro-response img.InLine
+{
+	max-height: 20px;
+}
+
+.micro-response img.MaxLine
+{
+	max-height: 13px;
+}
+
+.micro-response img.Paragraph
+{
+	height: 30px;
+}
+
+.micro-response li.HeadItem
+{
+	list-style: none;
+	background-position: 0px 9px;
+	padding-left: 16px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/Elements/ListHead.svg');
+	padding-bottom: 0px;
+}
+
+.micro-response ul.NegMargin	/*Negative Padding */
+{
+	margin-left: -16px;
+}
+
+.micro-response img.Max-Width100Percent
+{
+	min-width: 500px;
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P700
+{
+	min-width: 500px;
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P650
+{
+	min-width: 500px;
+	max-width: 100%;
+}
+
+.micro-response img.Max-WidthS100P600
+{
+	max-width: 100%;
+	min-width: 500px;
+}
+
+.micro-response img.Max-WidthS100P550
+{
+	max-width: 100%;
+	min-width: 500px;
+}
+
+.micro-response img.Max-WidthS100P500
+{
+	max-width: 100%;
+	min-width: 500px;
+}
+
+.micro-response img.IconLarge
+{
+	max-height: 32px;
+}
+
+.micro-response MadCap|xref.OnlyLink
+{
+	mc-format: '{i}{para}{/i}';
+	color: var(--WebColorBlue2);
+	font-weight: normal;
+	mc-italic-correction: 2px;
+}
+
+.micro-response MadCap|xref.OnlyLink:hover
+{
+	color: var(--WebColorBlue1);
+}
+
+.micro-response MadCap|xref.OnlyLink:focus
+{
+	
+}
+
+.micro-response MadCap|xref.TextNum:hover
+{
+	color: var(--WebColorBlue1);
+}
+
+.micro-response MadCap|xref.OnlyNum
+{
+	mc-format: '{page}';
+	mc-conditions: 'Default.PrintOnly';
+	color: var(--WebColorBlue2);
+}
+
+.micro-response MadCap|xref.ReleaseLinks:hover
+{
+	
+}
+
+.micro-response .PageBreakBefore
+{
+	page-break-before: always;
+}
+
+.micro-response .BorderBotWhite
+{
+	
+}
+
+.micro-response a > span.mcFormatColor:hover
+{
+	color: var(--WebColorBlue1) !important;
+}
+
+.micro-response MadCap|dropDown.LikeExpand
+{
+	mc-closed-image: url('../Images/Elements/ExpandingClosed.svg');
+	mc-image-position: right;
+	mc-image-spacing: 2px;
+	padding-top: 0px;
+	border-bottom: none;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	line-height: 20pt;
+	mc-open-image: url('../Images/Elements/ExpDown.svg');
+}
+
+.micro-response .Fields
+{
+	color: var(--DarkGrey);
+	font-weight: normal;
+	text-decoration: underline;
+	mc-hyphenate: never;
+	font-size: var(--FontSize);
+}
+
+.micro-response .Caption
+{
+	mc-italic-correction: 2px;
+	color: var(--WebColorBlue2);
+	font-style: italic;
+}
+
+.micro-response .NoLeftPad
+{
+	padding-left: 0px;
+}
+
+.micro-response .NoBorderBottom
+{
+	border-bottom: none;
+}
+
+.micro-response .BorderBotSBlack
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: var(--Black);
+	padding-bottom: 5px;
+}
+
+.micro-response .Level2
+{
+	font-size: 12pt;
+}
+
+.micro-response img.Height25
+{
+	height: 25px;
+}
+
+.micro-response .White
+{
+	color: var(--White);
+}
+
+.micro-response .Right
+{
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: right;
+}
+
+.micro-response img.Height50
+{
+	height: 50px;
+}
+
+.micro-response .Top-Padding
+{
+	line-height: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+}
+
